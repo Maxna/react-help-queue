@@ -20,7 +20,7 @@ class App extends React.Component {
     console.log('componentDidMount');
     this.waitTimeUpdateTimer = setInterval(() =>
       this.updateTicketElapsedWaitTime(),
-    5000
+    60000
     );
   }
 
