@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import TicketList from './TicketList';
+import TicketDetail from './TicketDetail';
 
 function Admin(props){
   let optionalSelectedTicketContent = null;
@@ -10,7 +11,7 @@ function Admin(props){
   return (
     <div>
       <h2>Admin</h2>
-      <TicketDetail />
+      {optionalSelectedTicketContent}
       <TicketList
         ticketList={props.ticketList}
         currentRouterPath={props.currentRouterPath}

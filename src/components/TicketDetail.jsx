@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function TicketDetail(){
+function TicketDetail(props){
   return (
     <div>
       <hr/>

@@ -8,7 +8,7 @@ function Ticket(props){
       <h4>{props.formattedWaitTime}</h4>
       <hr/>
     </div>;
-    if (props.currentRouterPath === '/admin'){
+  if (props.currentRouterPath === '/admin'){
     return (
       <div onClick={() => {props.onTicketSelection(props.ticketId);}}>
         {ticketInformation}
